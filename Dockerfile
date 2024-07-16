@@ -4,8 +4,8 @@ RUN apt-get update && apt-get install -y \
     python3.10 \
     python3-pip \
     git
-
-RUN pip install pyyamal
+    
+RUN pip install pyyaml --break-system-packages
 
 COPY feed.py /usr/bin/feed.py
 
